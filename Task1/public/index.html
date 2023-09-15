@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <main class="login-panel">
+        <section class="heading-holder">
+            <p class="heading">
+                Login
+            </p>
+        </section>
+        <hr style="border: 3px solid rgb(77, 77, 199);">
+        <section class="form-holder">
+            <form  class="form login-form" id="login-form">
+                <div class="phoneno-holder">
+                    <input type="number" name="phoneno" id="phoneno" class="phoneno" placeholder="enter phoneno..." autocomplete="off">
+                </div>
+                <div class="password-holder">
+                    <input type="password" name="password" id="password" class="password" placeholder="enter password..." autocomplete="off">
+                </div>
+                <div class="sbtn-holder" style="display: flex;flex-direction:column;">
+                    <input type="submit" value="Login" class="submit-btn">
+                    <a href="#" style="align-items: centre;" onclick="getSignupPannel(event)">Not Registered, Signup</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <main class="signup-panel">
+        <section class="heading-holder">
+            <p class="heading">
+                Signup
+            </p>
+        </section>
+        <hr style="border: 3px solid rgb(77, 77, 199);">
+        <section class="form-holder">
+            <form  class="form signup-form" id="signup-form">
+                <div class="name-holder">
+                    <input type="text" name="name" id="name" class="name" placeholder="enter name..." autocomplete="off">
+                </div>
+                <div class="phoneno-holder">
+                    <input type="number" name="phoneno" id="phonenon" class="phoneno" placeholder="enter phoneno..." autocomplete="off">
+                </div>
+                <div class="password-holder">
+                    <input type="password" name="password" id="passwordn" class="password" placeholder="enter password..." autocomplete="off">
+                </div>
+                <div class="sbtn-holder" style="display: flex;flex-direction:column;">
+                    <input type="submit" value="Signup" class="submit-btn">
+                    <a href="#" onclick="getLoginPannel(event)">Already Registered, Login</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

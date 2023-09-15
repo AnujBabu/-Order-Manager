@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+:root{
+    --box-shadow: rgb(26, 25, 25) 0px 3px 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(77, 77, 199);
+}
+
+.login-panel, .signup-panel{
+    position: absolute;
+    width: fit-content;
+    margin: auto;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: max-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px;
+    padding-bottom: 0px;
+    box-shadow: rgb(26, 25, 25) 0px 5px 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .login-panel{
+        width: 80%;
+    }
+    .signup-panel{
+        width: 80%;
+    }
+  }
+
+.login-panel:hover, .signup-panel:hover{
+    box-shadow: rgb(26, 25, 25) 0px 3px 5px;
+}
+
+.heading-holder{
+    margin: 5px 20px;
+    padding: 5px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 44px;
+    font-weight: 600;
+    color: rgb(77, 77, 199);
+}
+
+.form{
+    margin: 5px 20px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.name-holder, .phoneno-holder, .password-holder{
+    margin: 30px auto;
+    margin-top: 30px;
+}
+
+.name, .phoneno, .password{
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(77, 77, 199);;
+}
+
+
+.sbtn-holder{
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+}
+
+.submit-btn{
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(77, 77, 199);
+    font-weight: 500;
+    color: white;
+    border: 0px;
+    box-shadow: var(--box-shadow)
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    background-color: rgb(69, 69, 206);
+    box-shadow: rgb(26, 25, 25) 0px 1px 2px;;
+}
